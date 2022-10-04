@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<!-- 요청 방식을 따로 지정하지 않으면 -->
+	<!-- 요청기본값은 get방식! -->
+	<!-- method : 요청방식 지정 속성 ( get / post )  -->
+	<!-- GET 요청 데이터 한글인코딩 방법 -->
+	<!-- Servers/server.xml > URIEncoding="UTF-8"추가 -->
+	<!-- Tomcat 8 > 기본값이 UTF-8 -->
+	<form action="Ex01login" method="get">
+	<input type="text" name="id">
+	<input type="password" name="pw">
+	<input type="submit" value="get">
+	</form>
+	
+	<form action="Ex01login" method="post">
+	<input type="text" name="id">
+	<input type="password" name="pw">
+	<input type="submit" value="post">
+	</form>
+</body>
+</html>
